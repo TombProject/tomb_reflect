@@ -1,0 +1,8 @@
+flake8
+mock
+pytest
+pytest-cov
+pytest-xdist
+tomb_routes
+tox
+webtest
