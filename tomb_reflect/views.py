@@ -1,3 +1,6 @@
+from pyramid.httpexceptions import HTTPNotFound
+
+
 class Routes(object):
     def __init__(self, request):
         self.request = request
@@ -15,6 +18,9 @@ class Routes(object):
         route_name = self.request.matchdict['route_name']
 
         route = self.route_manager.get_route(route_name)
+        if not route:
+            raise HTTPNotFound(
+                'The route with name %r could not be found' % route_name)
         view_name = self.route_manager.get_view_name(route_name)
 
         return {
