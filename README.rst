@@ -1,6 +1,15 @@
 tomb_reflect
 =================================
 
+.. image:: https://img.shields.io/pypi/v/tomb_reflect.svg
+    :target: https://pypi.python.org/pypi/tomb_reflect
+
+.. image:: https://img.shields.io/travis/tomborine/tomb_reflect.svg
+    :target: https://travis-ci.org/tomborine/tomb_reflect
+
+.. image:: https://coveralls.io/repos/tomborine/tomb_reflect/badge.png?branch=master
+           :target: https://coveralls.io/r/tomborine/tomb_reflect?branch=master
+
 Intro
 =================================
 
